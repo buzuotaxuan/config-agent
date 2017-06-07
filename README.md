@@ -11,7 +11,21 @@ gitlab支持在线Web修改文件，遂使用该方式可实现一个支持传�
 
 # 项目结构
 
-## git配置仓库结构
+    Docker+Jenkins的持续集成及相关脚本分享请查看 http://blog.lipg.cn/ji-yu-jenkinsshi-xian-de-docker-imagechi-xu-ji-cheng/
+
+## git作为配置中心，其每个仓库结构
+
+- 根目录
+   - app/ : 项目配置文件
+   - script/ : 项目所需脚本
+
+## 项目结构(基于jenkins的Pipeline构建)
+
+- 根目录
+   - Jenkinsfile : jenkins构建脚本
+   - docker/ : Docker构建所需的Dockerfile等文件
+        - entrypoint/ : 启动脚本
+        - Dockerfile : docker构建脚本
 
 # 使用方式
 
